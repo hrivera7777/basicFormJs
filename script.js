@@ -40,10 +40,10 @@ function verifiedLegalAge() {
     if (age < 18) {
         illegalAge.hidden = false;
         illegalAge.style.color = "orange";
-        submitButton.disabled = false;
+        submitButton.disabled = true;
     } else {
         illegalAge.hidden = true;
-        submitButton.disabled = true;
+        submitButton.disabled = false;
     }
 }
 
